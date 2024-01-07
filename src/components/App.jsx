@@ -35,7 +35,7 @@ function App() {
     if (savedProgress == null || savedProgress === 0) {
       const intervalId = setInterval(() => {
         const progress = localStorage.getItem('progress');
-        if (progress !== null && progress !== 0) {
+        if (progress !== null && progress == 10) {
           setSavedProgress(progress);
           clearInterval(intervalId);
         }
