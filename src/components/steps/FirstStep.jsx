@@ -29,6 +29,7 @@ const FirstStep = () => {
         const onload = () => {
           if (player == 'dead') {
                 navigate('/');
+                window.location.reload;
           }
           localStorage.removeItem('player');
         };
