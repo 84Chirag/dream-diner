@@ -1,0 +1,77 @@
+
+
+.maintitle{
+    color: wheat;
+    font-size: 50px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    padding-top: 20%;
+    font-family: 'Creepster', system-ui;
+}
+
+.btn-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+
+.btn-play{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Creepster', system-ui;
+    background: transparent;
+    color: red;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-play:hover{
+    color: red;
+}
+
+.btn-continue{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Creepster', system-ui;
+    background: transparent;
+    color: red;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-continue:hover{
+    color: red;
+}
+
+/* mobile screen */
+
+@media (min-width: 320px) and (max-width: 375px){
+    .maintitle{
+        font-size: 30px;
+        padding-top: 70%;
+    }
+}
+
+@media (min-width: 393px) and (max-width: 394px){
+    .maintitle{
+        font-size: 38px;
+        padding-top: 70%;
+    }
+}
+
+@media (min-width: 413px) and (max-width: 425px){
+    .maintitle{
+        font-size: 40px;
+        padding-top: 60%;
+    }
+}
+
+/* tablet screen */
+
+@media (min-width: 768px) and (max-width: 769px) {
+    .maintitle{
+        padding-top: 30%;
+    }
+}
