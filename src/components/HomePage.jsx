@@ -24,7 +24,20 @@ const HomePage = () => {
       navigate('/secondstep')
     } else if (savedProgress == 10) {
       navigate('/thirdstep')
+    } else if (savedProgress == 15) {
+      navigate('/fourthstep');
+    }else if (savedProgress == 20) {
+      navigate('/fifthstep');
+    }else if (savedProgress == 25) {
+      navigate('/sixthstep');
+    }else if (savedProgress == 30) {
+      navigate('/seventhstep');
+    }else if (savedProgress == 35) {
+      navigate('/eighthstep');
+    }else if (savedProgress == 40) {
+      navigate('/ninthstep');
     }
+
   }
 
   return (

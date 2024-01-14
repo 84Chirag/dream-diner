@@ -54,6 +54,13 @@
     }
 }
 
+@media (min-width: 376px) and (max-width: 392px){
+    .maintitle{
+        font-size: 30px;
+        padding-top: 70%;
+    }
+}
+
 @media (min-width: 393px) and (max-width: 394px){
     .maintitle{
         font-size: 38px;
@@ -61,7 +68,21 @@
     }
 }
 
+@media (min-width: 395px) and (max-width: 412px){
+    .maintitle{
+        font-size: 38px;
+        padding-top: 70%;
+    }
+}
+
 @media (min-width: 413px) and (max-width: 425px){
+    .maintitle{
+        font-size: 40px;
+        padding-top: 60%;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 470px){
     .maintitle{
         font-size: 40px;
         padding-top: 60%;

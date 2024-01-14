@@ -60,6 +60,8 @@
     font-weight: 400;
     margin-bottom: 20px;
     margin-top: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   
   .notfound a {
@@ -82,11 +84,80 @@
     color: red;
   }
   
-  @media only screen and (max-width: 767px) {
-      .notfound .notfound-404 {
-        height: 142px;
-      }
-      .notfound .notfound-404 h1 {
-        font-size: 112px;
-      }
+@media (min-width: 320px) and (max-width: 375px){
+  .notfound h2{
+    font-size: 25px;
   }
+  .notfound p {
+    font-size: 16px;
+  }
+  .notfound a{
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 392px){
+  .notfound h2{
+    font-size: 25px;
+  }
+  .notfound p {
+    font-size: 16px;
+  }
+  .notfound a{
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 393px) and (max-width: 394px){
+  .notfound h2{
+    font-size: 25px;
+  }
+  .notfound p {
+    font-size: 16px;
+  }
+  .notfound a{
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 395px) and (max-width: 412px){
+  .notfound h2{
+    font-size: 25px;
+  }
+  .notfound p {
+    font-size: 16px;
+  }
+  .notfound a{
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 413px) and (max-width: 425px){
+  .notfound h2{
+    font-size: 25px;
+  }
+  .notfound p {
+    font-size: 16px;
+  }
+  .notfound a{
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 470px){
+  .notfound h2{
+    font-size: 25px;
+  }
+  .notfound p {
+    font-size: 16px;
+  }
+  .notfound a{
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+}

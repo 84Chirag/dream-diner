@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import chopping from "../../assets/audio/chopping.mp3";
-import femalescream from "../../assets/audio/femalescream.mp3";
 
-const ThirdStep = () => {
+const NinthStep = () => {
     const navigate = useNavigate();
     const [showOptions, setShowOptions] = useState(true);
     const [showDiedResponse, setShowDiedResponse] = useState(false);
@@ -12,29 +10,23 @@ const ThirdStep = () => {
 
     const handleDied = () => {
         setShowOptions(false);
-        setShowDiedResponse2(false);
         setShowDiedResponse(true);
         localStorage.setItem('player','dead');
-        const audio = new Audio(chopping);
-        audio.play();
     };
 
     const handleDied2 = () => {
         setShowOptions(false);
-        setShowDiedResponse(false);
         setShowDiedResponse2(true);
         localStorage.setItem('player','dead');
-        const audio = new Audio(femalescream);
-        audio.play();
     };
 
     const handleSurvive = () => {
         setShowOptions(false);
         setShowSurviveResponse(true);
-        localStorage.setItem('progress',15);
+        localStorage.setItem('progress',40);
         setTimeout(() => {
-            navigate('/fourthstep');
-        }, 3000);
+            navigate('/ninthstep');
+        }, 5000);
     };
 
     useEffect(() => {
@@ -51,42 +43,43 @@ const ThirdStep = () => {
             return () => {
               window.removeEventListener('load', onload);
             };
-        }, [navigate]);
+    }, [navigate]);
 
-    return (
-        <div className='allsteps secondstep thirdstep'>
-            <h3 className='secondtagline'>As you are looking at the menu, a girl from table behind you, stands up and walk towards you. </h3>
-            <h1>You see her eyes are normal, she hands you a note ...</h1>
+  return (
+    <div className='allsteps secondstep ninthstep'>
+            <h3 className='secondtagline'>You go back into the kitchen, and see an unnaturally tall demonic creature with glowing eyes and a large smile from ear to ear. Its skin is burnt and it has giant claws for hands.</h3>
+            <h3>It's holding a meat cleaver to the girl's neck. he is the one who turns people trapped in the Diner and and couldn't wake up into creatures like the waiter.</h3>
+            <h1>You have just met The Chef...</h1>
             {showOptions && (
                 <div className="options">
-                    <button className="btn survivedbtn" onClick={handleSurvive}>
-                        Take the note and hide it
-                    </button>
                     <button className="btn diedbtn" onClick={handleDied}>
-                        Take the note and ask her how to escape
+                        Pick a kitchen knife and get ready to fight.
                     </button>
                     <button className="btn diedbtn" onClick={handleDied2}>
-                        Take the note and read it
+                        Ask the chief if you can have something to eat.
+                    </button>
+                    <button className="btn survivedbtn" onClick={handleSurvive}>
+                        Leave the girl and run back to storage room.
                     </button>
                 </div>
             )}
             {showSurviveResponse && (
-                <p className='surviveres'>You Survived. For now ...</p>
+                <p className='surviveres'>You are getting closer to waking up from your Dream ...</p>
             )}
             {showDiedResponse && (
                 <div>
-                    <p className='diedres'>You Died. They heard you. they know now you don't belong here and cut off all limbs and hung them up with meat hookers</p>
+                    <p className='diedres diedres2'>The people on the meat hook have become mindless zombie, and they are trapped forever. As soon you have set them free they eat alive, you died.</p>
                     <a href='/' className='btn btn-restart'>Restart</a>
                 </div>
             )}
             {showDiedResponse2 && (
                 <div>
-                    <p className='diedres'>You Died. The girl starts screaming, then waiter ties you both together and shoves you in the oven to cook both alive .</p>
+                    <p className='diedres diedres2'>The people on the meat hook have become mindless zombie, and they are trapped forever. As soon you have set them free they eat alive, you died.</p>
                     <a href='/' className='btn btn-restart'>Restart</a>
                 </div>
             )}
-        </div>
-    );
+    </div>
+  )
 }
 
-export default ThirdStep
+export default NinthStep

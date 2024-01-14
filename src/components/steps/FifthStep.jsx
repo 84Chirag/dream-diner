@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import chopping from "../../assets/audio/chopping.mp3";
-import femalescream from "../../assets/audio/femalescream.mp3";
 
-const ThirdStep = () => {
+const FifthStep = () => {
     const navigate = useNavigate();
     const [showOptions, setShowOptions] = useState(true);
     const [showDiedResponse, setShowDiedResponse] = useState(false);
@@ -12,11 +10,9 @@ const ThirdStep = () => {
 
     const handleDied = () => {
         setShowOptions(false);
-        setShowDiedResponse2(false);
+        setShowDiedResponse2(false)
         setShowDiedResponse(true);
         localStorage.setItem('player','dead');
-        const audio = new Audio(chopping);
-        audio.play();
     };
 
     const handleDied2 = () => {
@@ -24,16 +20,14 @@ const ThirdStep = () => {
         setShowDiedResponse(false);
         setShowDiedResponse2(true);
         localStorage.setItem('player','dead');
-        const audio = new Audio(femalescream);
-        audio.play();
     };
 
     const handleSurvive = () => {
         setShowOptions(false);
         setShowSurviveResponse(true);
-        localStorage.setItem('progress',15);
+        localStorage.setItem('progress',25);
         setTimeout(() => {
-            navigate('/fourthstep');
+            navigate('/sixthstep');
         }, 3000);
     };
 
@@ -51,42 +45,43 @@ const ThirdStep = () => {
             return () => {
               window.removeEventListener('load', onload);
             };
-        }, [navigate]);
+    }, [navigate]);
 
-    return (
-        <div className='allsteps secondstep thirdstep'>
-            <h3 className='secondtagline'>As you are looking at the menu, a girl from table behind you, stands up and walk towards you. </h3>
-            <h1>You see her eyes are normal, she hands you a note ...</h1>
+  return (
+    <div className='allsteps secondstep fifthstep'>
+            <h3 className='secondtagline'>The waiter's back is turned as he is watching other table,</h3>
+            <h3>The girl get's up and start to walk toward kitchen.</h3>
+            <h1>What will you do?</h1>
             {showOptions && (
                 <div className="options">
                     <button className="btn survivedbtn" onClick={handleSurvive}>
-                        Take the note and hide it
+                        Follow the girl into the kitchen.
                     </button>
                     <button className="btn diedbtn" onClick={handleDied}>
-                        Take the note and ask her how to escape
+                        Stay in your seat.
                     </button>
                     <button className="btn diedbtn" onClick={handleDied2}>
-                        Take the note and read it
+                        Try to ask how she knows the escape is in the kitchen in low voice.
                     </button>
                 </div>
             )}
             {showSurviveResponse && (
-                <p className='surviveres'>You Survived. For now ...</p>
-            )}
-            {showDiedResponse && (
-                <div>
-                    <p className='diedres'>You Died. They heard you. they know now you don't belong here and cut off all limbs and hung them up with meat hookers</p>
-                    <a href='/' className='btn btn-restart'>Restart</a>
-                </div>
+                <p className='surviveres'>Congrats, you made it into the kitchen. Now you must be even more careful ...</p>
             )}
             {showDiedResponse2 && (
                 <div>
-                    <p className='diedres'>You Died. The girl starts screaming, then waiter ties you both together and shoves you in the oven to cook both alive .</p>
+                    <p className='diedres'>The girl came back to get you. This caught the attention of the waiter, who graps you bite your head off.</p>
+                    <a href='/' className='btn btn-restart'>Restart</a>
+                </div>
+            )}
+            {showDiedResponse && (
+                <div>
+                    <p className='diedres diedres2'>The other people sitting in the Diner all comes and surrounds your table and they squeeze your eyeballs out until they are black empty holes just like theirs.</p>
                     <a href='/' className='btn btn-restart'>Restart</a>
                 </div>
             )}
         </div>
-    );
+  )
 }
 
-export default ThirdStep
+export default FifthStep

@@ -17,7 +17,13 @@
     margin-top: 15px;
     font-size: 25px;
 }
+.diedres2{
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 20px;
+}
 .surviveres{
+    color: #06ca00;
     margin-top: 15px;
     font-size: 25px; 
 }
@@ -34,6 +40,22 @@
 .secondtagline {
     margin-top: 10%;
 }
+.eighthstep > h3 {
+        text-align: center;
+        margin-left: 40px;
+        margin-right: 40px;
+}
+.eighthstep > h1 {
+    text-align: center;
+}
+.ninthstep > h3 {
+        text-align: center;
+        margin-left: 40px;
+        margin-right: 40px;
+}
+.ninthstep > h1 {
+    text-align: center;
+}
 
 /* mobile screen */
 
@@ -46,6 +68,52 @@
     }
     .firststep > h3 {
         margin-left: 5px;
+    }
+    .options > button {
+        color: red;
+        font-size: 14px;
+    }
+    .diedres{
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 14px;
+    }
+    .surviveres{
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 15px;
+    }
+    .secondstep{
+        text-align: center;
+        padding-top: 25%;
+    }
+    .secondstep > h1 {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 18px;
+    }
+    .secondstep > h3 {
+        font-size: 14px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 392px){
+    .firststep{
+        text-align: center;
+    }
+    .firststep > h1 {
+        margin-top: 40%;
+        font-size: 18px;
+    }
+    .firststep > h3 {
+        margin-left: 5px;
+        font-size: 14px;
+    }
+    .options > button {
+        color: red;
+        font-size: 18px;
     }
     .diedres{
         margin-left: 10px;
@@ -62,9 +130,10 @@
     .secondstep > h1 {
         margin-left: 10px;
         margin-right: 10px;
+        font-size: 18px;
     }
     .secondstep > h3 {
-        font-size: 18px;
+        font-size: 14px;
         margin-left: 10px;
         margin-right: 10px;
     }
@@ -86,7 +155,42 @@
         font-size: 20px;
     }
     .surviveres{
-        margin-left: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .secondstep{
+        text-align: center;
+        padding-top: 35%;
+    }
+    .secondstep > h1 {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .secondstep > h3 {
+        font-size: 18px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media (min-width: 395px) and (max-width: 412px){
+    .firststep{
+        text-align: center;
+    }
+    .firststep > h1 {
+        margin-top: 60%;
+    }
+    .firststep > h3 {
+        margin-left: 5px;
+    }
+    .diedres{
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 20px;
+    }
+    .surviveres{
+        margin-left: 10px;
+        margin-right: 10px;
     }
     .secondstep{
         text-align: center;
@@ -115,10 +219,48 @@
         margin-right: 15px;
     }
     .diedres{
-        margin-left: 5px;
+        margin-left: 25px;
+        font-size: 18px;
+        margin-right: 25px;
     }
     .surviveres{
         margin-left: 20px;
+        margin-right: 20px;
+    }
+    .secondstep{
+        text-align: center;
+        padding-top: 30%;
+    }
+    .secondstep > h1 {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .secondstep > h3 {
+        font-size: 18px;
+        margin-left: 10px;
+        margin-right: 10px;
+    } 
+}
+
+@media (min-width: 426px) and (max-width: 470px){
+    .firststep{
+        text-align: center;
+    }
+   .firststep > h1 {
+        margin-top: 55%;
+    }
+    .firststep > h3 {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .diedres{
+        margin-left: 25px;
+        font-size: 18px;
+        margin-right: 25px;
+    }
+    .surviveres{
+        margin-left: 20px;
+        margin-right: 20px;
     }
     .secondstep{
         text-align: center;
