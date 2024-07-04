@@ -20,22 +20,24 @@ const HomePage = () => {
         audio.loop = true;
         audio.play();
     const savedProgress = localStorage.getItem('progress');
-    if (savedProgress == 5) {
+    if (savedProgress == 10) {
       navigate('/secondstep')
-    } else if (savedProgress == 10) {
+    } else if (savedProgress == 20) {
       navigate('/thirdstep')
-    } else if (savedProgress == 15) {
+    } else if (savedProgress == 30) {
       navigate('/fourthstep');
-    }else if (savedProgress == 20) {
-      navigate('/fifthstep');
-    }else if (savedProgress == 25) {
-      navigate('/sixthstep');
-    }else if (savedProgress == 30) {
-      navigate('/seventhstep');
-    }else if (savedProgress == 35) {
-      navigate('/eighthstep');
     }else if (savedProgress == 40) {
+      navigate('/fifthstep');
+    }else if (savedProgress == 50) {
+      navigate('/sixthstep');
+    }else if (savedProgress == 60) {
+      navigate('/seventhstep');
+    }else if (savedProgress == 70) {
+      navigate('/eighthstep');
+    }else if (savedProgress == 80) {
       navigate('/ninthstep');
+    }else if (savedProgress == 90) {
+      navigate('/ending');
     }
 
   }

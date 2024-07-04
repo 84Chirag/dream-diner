@@ -16,7 +16,7 @@ const EighthStep = () => {
     const handleSurvive = () => {
         setShowOptions(false);
         setShowSurviveResponse(true);
-        localStorage.setItem('progress',40);
+        localStorage.setItem('progress',80);
         setTimeout(() => {
             navigate('/ninthstep');
         }, 5000);

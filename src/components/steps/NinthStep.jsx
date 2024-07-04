@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+
 const NinthStep = () => {
     const navigate = useNavigate();
     const [showOptions, setShowOptions] = useState(true);
@@ -23,9 +24,9 @@ const NinthStep = () => {
     const handleSurvive = () => {
         setShowOptions(false);
         setShowSurviveResponse(true);
-        localStorage.setItem('progress',40);
+        localStorage.setItem('progress',90);
         setTimeout(() => {
-            navigate('/ninthstep');
+            navigate('/ending');
         }, 5000);
     };
 
@@ -63,18 +64,19 @@ const NinthStep = () => {
                     </button>
                 </div>
             )}
+
             {showSurviveResponse && (
                 <p className='surviveres'>You are getting closer to waking up from your Dream ...</p>
             )}
             {showDiedResponse && (
                 <div>
-                    <p className='diedres diedres2'>The people on the meat hook have become mindless zombie, and they are trapped forever. As soon you have set them free they eat alive, you died.</p>
+                    <p className='diedres diedres2'>The chief kills the girl And he mutilates you, severing your limbs and hands, before throwing you into hot oil where you screams in agony.</p>
                     <a href='/' className='btn btn-restart'>Restart</a>
                 </div>
             )}
             {showDiedResponse2 && (
                 <div>
-                    <p className='diedres diedres2'>The people on the meat hook have become mindless zombie, and they are trapped forever. As soon you have set them free they eat alive, you died.</p>
+                    <p className='diedres diedres2'> With a savage fury, the chief tears your beating heart from your chest and cruelly shoves it into your mouth, you died.</p>
                     <a href='/' className='btn btn-restart'>Restart</a>
                 </div>
             )}

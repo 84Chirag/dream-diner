@@ -1,8 +1,22 @@
-# React + Vite
+# Dream Diner: A Horror Choice Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to **Dream Diner**, a thrilling interactive horror game deployed on Vercel. Immerse yourself in a haunting narrative where every decision you make influences the outcome. Set in the eerie ambiance of a mysterious diner, you'll encounter unsettling choices that shape your fate.
 
-Currently, two official plugins are available:
+## Key Features:
+- **Interactive Storytelling:** Navigate a gripping storyline where your decisions impact the unfolding events.
+- **Atmospheric Changes:** Experience the tension with dynamically changing background images that reflect the evolving storyline.
+- **Eerie Audio:** Atmospheric background sounds intensify the suspense, creating an immersive horror experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## How to Play:
+1. **Visit the Website:** [Dream Diner](https://dream-diner.vercel.app)
+2. **Explore:** Follow the prompts, make decisions, and uncover the chilling mysteries of Dream Diner.
+
+## Technologies Used:
+- **React:** Powering the interactive user interface and state management.
+- **CSS:** Styling components to create a thematic and immersive visual experience.
+- **JavaScript:** Implementing gameplay mechanics and audio-visual effects.
+
+## Contributors:
+- [Chirag Gour](https://github.com/84Chirag)
+
+Join us in shaping the terrifying world of Dream Diner. Contribute, report issues, or suggest enhancements to enhance the horror adventure!
